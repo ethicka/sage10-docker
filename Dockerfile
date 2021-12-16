@@ -6,13 +6,17 @@ RUN apk update && apk add --no-cache \
     curl \
     php7 \
     php7-mbstring  \
+    php7-phar \
+    php7-json \
+    php7-openssl \
+    php7-fileinfo \
     nodejs \
     npm \
     composer
 
 RUN npm install -g yarn
 
-SHELL ["/bin/bash", "-o", "pipefail", "-c"]
-CMD ["bash"]
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer
 
-EXPOSE 8001
+# SHELL ["/bin/bash", "-o", "pipefail", "-c"]
+CMD ["bash"]
