@@ -18,5 +18,4 @@ RUN npm install -g yarn
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer
 
-# SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 CMD ["bash"]
