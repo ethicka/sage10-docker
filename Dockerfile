@@ -9,6 +9,9 @@ RUN apk update && apk add --no-cache \
     php8-phar \
     php8-openssl \
     php8-fileinfo \
+    php8-simplexml \
+    php8-tokenizer \
+    php8-xmlwriter \
     nodejs \
     npm \
     composer
