@@ -1,15 +1,14 @@
-FROM alpine:3.15
+FROM alpine:3.16
 LABEL maintainer="William Donahoe"
 
 RUN apk update && apk add --no-cache \
     bash \
     curl \
-    php7 \
-    php7-mbstring  \
-    php7-phar \
-    php7-json \
-    php7-openssl \
-    php7-fileinfo \
+    php8 \
+    php8-mbstring  \
+    php8-phar \
+    php8-openssl \
+    php8-fileinfo \
     nodejs \
     npm \
     composer
