@@ -1,17 +1,19 @@
-FROM alpine:3.16
+FROM alpine:3.18
 LABEL maintainer="William Donahoe"
 
 RUN apk update && apk add --no-cache \
     bash \
     curl \
-    php8 \
-    php8-mbstring  \
-    php8-phar \
-    php8-openssl \
-    php8-fileinfo \
-    php8-simplexml \
-    php8-tokenizer \
-    php8-xmlwriter \
+    php81 \
+    php81-mbstring  \
+    php81-phar \
+    php81-openssl \
+    php81-fileinfo \
+    php81-simplexml \
+    php81-tokenizer \
+    php81-xmlwriter \
+    php81-pdo \         
+    php81-session \    
     nodejs \
     npm \
     composer
